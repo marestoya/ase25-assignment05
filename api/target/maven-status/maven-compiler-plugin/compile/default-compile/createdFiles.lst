@@ -1,0 +1,8 @@
+de/unibayreuth/se/taskboard/api/mapper/TaskDtoMapperImpl.class
+de/unibayreuth/se/taskboard/api/controller/UserController.class
+de/unibayreuth/se/taskboard/api/dtos/TaskDto.class
+de/unibayreuth/se/taskboard/api/mapper/UserDtoMapper.class
+de/unibayreuth/se/taskboard/api/dtos/UserDto.class
+de/unibayreuth/se/taskboard/api/mapper/UserDtoMapperImpl.class
+de/unibayreuth/se/taskboard/api/controller/TaskController.class
+de/unibayreuth/se/taskboard/api/mapper/TaskDtoMapper.class

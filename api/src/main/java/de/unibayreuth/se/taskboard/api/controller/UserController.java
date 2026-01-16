@@ -6,6 +6,22 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import de.unibayreuth.se.taskboard.api.mapper.UserDtoMapper;
+import de.unibayreuth.se.taskboard.api.dtos.UserDto;
+
+import de.unibayreuth.se.taskboard.business.ports.UserService;
+import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import de.unibayreuth.se.taskboard.business.domain.User;
+import java.util.stream.Collectors;
+
+
+import java.util.List;
+import java.util.UUID;
+import java.util.Optional;
+
+
 
 @OpenAPIDefinition(
         info = @Info(
@@ -18,7 +34,37 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
 public class UserController {
+
+
+    private final UserService userService;
+     private final UserDtoMapper userDtoMapper;
+
     // TODO: Add GET /api/users endpoint to retrieve all users.
+    @GetMapping
+     public ResponseEntity<List<UserDto>> getAllUsers() {
+        List<UserDto> dtos = userService.getAllUsers()
+                .stream()
+                .map(userDtoMapper::fromBusiness)
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(dtos);
+    }
+
     // TODO: Add GET /api/users/{id} endpoint to retrieve a user by ID.
+    @GetMapping("/{id}")
+    public ResponseEntity<UserDto> getUserById(@PathVariable String id) {
+        Optional<User> user = userService.getUserById(java.util.UUID.fromString(id));
+        return user
+            .map(userDtoMapper::fromBusiness)      
+            .map(ResponseEntity::ok)               
+            .orElseGet(() -> ResponseEntity.notFound().build());   
+    }
+
     // TODO: Add POST /api/users endpoint to create a new user based on a provided user DTO.
+    @PostMapping
+    public ResponseEntity<UserDto> createUser(@Valid @RequestBody UserDto dto) {
+        User user = new User(dto.getName());
+        User created = userService.createUser(user);
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(userDtoMapper.fromBusiness(created));
+    }
 }

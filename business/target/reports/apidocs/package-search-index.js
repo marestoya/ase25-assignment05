@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"de.unibayreuth.se.taskboard.business.domain"},{"l":"de.unibayreuth.se.taskboard.business.exceptions"},{"l":"de.unibayreuth.se.taskboard.business.impl"},{"l":"de.unibayreuth.se.taskboard.business.ports"}];updateSearchResults();

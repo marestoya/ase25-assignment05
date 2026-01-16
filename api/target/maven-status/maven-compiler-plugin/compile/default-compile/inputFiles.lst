@@ -1,0 +1,6 @@
+/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/controller/TaskController.java
+/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/controller/UserController.java
+/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/dtos/TaskDto.java
+/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/dtos/UserDto.java
+/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/mapper/TaskDtoMapper.java
+/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/mapper/UserDtoMapper.java

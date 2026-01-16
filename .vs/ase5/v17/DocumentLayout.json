@@ -1,0 +1,209 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marsp\\source\\repos\\ase5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\application\\src\\test\\java\\de\\unibayreuth\\se\\taskboard\\TaskBoardSystemTests.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\src\\test\\java\\de\\unibayreuth\\se\\taskboard\\TaskBoardSystemTests.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\TaskDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\TaskDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\UserDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\UserDto.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\controller\\UserController.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\controller\\UserController.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\mapper\\TaskDtoMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\mapper\\TaskDtoMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\impl\\UserServiceImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\impl\\UserServiceImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\ports\\UserService.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\ports\\UserService.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\domain\\User.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\domain\\User.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marsp\\source\\repos\\ase5\\application\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\LoadInitialData.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\LoadInitialData.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 334,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserServiceImpl.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\impl\\UserServiceImpl.java",
+              "RelativeDocumentMoniker": "business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\impl\\UserServiceImpl.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\impl\\UserServiceImpl.java",
+              "RelativeToolTip": "business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\impl\\UserServiceImpl.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T17:03:51.159Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserDto.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\UserDto.java",
+              "RelativeDocumentMoniker": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\UserDto.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\UserDto.java",
+              "RelativeToolTip": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\UserDto.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T16:44:33.401Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\controller\\UserController.java",
+              "RelativeDocumentMoniker": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\controller\\UserController.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\controller\\UserController.java",
+              "RelativeToolTip": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\controller\\UserController.java",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T16:44:20.882Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\ports\\UserService.java",
+              "RelativeDocumentMoniker": "business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\ports\\UserService.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\ports\\UserService.java",
+              "RelativeToolTip": "business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\ports\\UserService.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T16:47:32.34Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskDto.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\TaskDto.java",
+              "RelativeDocumentMoniker": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\TaskDto.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\TaskDto.java",
+              "RelativeToolTip": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos\\TaskDto.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-12T16:09:02.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\domain\\User.java",
+              "RelativeDocumentMoniker": "business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\domain\\User.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\domain\\User.java",
+              "RelativeToolTip": "business\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\business\\domain\\User.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-12T15:46:49.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoadInitialData.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\application\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\LoadInitialData.java",
+              "RelativeDocumentMoniker": "application\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\LoadInitialData.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\application\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\LoadInitialData.java",
+              "RelativeToolTip": "application\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\LoadInitialData.java",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T16:46:06.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskDtoMapper.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\mapper\\TaskDtoMapper.java",
+              "RelativeDocumentMoniker": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\mapper\\TaskDtoMapper.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\mapper\\TaskDtoMapper.java",
+              "RelativeToolTip": "api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\mapper\\TaskDtoMapper.java",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC0AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T16:45:39.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskBoardSystemTests.java",
+              "DocumentMoniker": "C:\\Users\\marsp\\source\\repos\\ase5\\application\\src\\test\\java\\de\\unibayreuth\\se\\taskboard\\TaskBoardSystemTests.java",
+              "RelativeDocumentMoniker": "application\\src\\test\\java\\de\\unibayreuth\\se\\taskboard\\TaskBoardSystemTests.java",
+              "ToolTip": "C:\\Users\\marsp\\source\\repos\\ase5\\application\\src\\test\\java\\de\\unibayreuth\\se\\taskboard\\TaskBoardSystemTests.java",
+              "RelativeToolTip": "application\\src\\test\\java\\de\\unibayreuth\\se\\taskboard\\TaskBoardSystemTests.java",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAgwJAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-04T16:46:30.849Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

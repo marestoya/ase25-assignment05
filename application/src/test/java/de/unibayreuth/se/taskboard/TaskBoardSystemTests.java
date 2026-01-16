@@ -14,11 +14,25 @@ import static io.restassured.RestAssured.when;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 
+import de.unibayreuth.se.taskboard.api.dtos.UserDto;
+import de.unibayreuth.se.taskboard.business.domain.User;
+import de.unibayreuth.se.taskboard.api.mapper.UserDtoMapper;
+import de.unibayreuth.se.taskboard.business.ports.UserService;
+import java.util.UUID;
+import java.util.stream.Collectors;
+
+
 
 public class TaskBoardSystemTests extends AbstractSystemTest {
 
     @Autowired
     private TaskDtoMapper taskDtoMapper;
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private UserDtoMapper userDtoMapper;
 
     @Test
     void getAllCreatedTasks() {
@@ -66,4 +80,98 @@ public class TaskBoardSystemTests extends AbstractSystemTest {
     }
 
     //TODO: Add at least one test for each new endpoint in the users controller (the create endpoint can be tested as part of the other endpoints).
+
+    @Test
+    void getAllCreatedUsers() {
+        
+        List<User> createdUsers = TestFixtures.createUsers(userService);
+
+        List<UserDto> createdUserDtos = createdUsers.stream()
+                .map(userDtoMapper::fromBusiness)
+                .collect(Collectors.toList());
+
+        List<UserDto> retrievedUsers = given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/users")
+                .then()
+                .statusCode(200)
+                .body(".", hasSize(createdUserDtos.size()))
+                .extract()
+                .jsonPath()
+                .getList("$", UserDto.class);
+
+        assertThat(retrievedUsers)
+                .usingRecursiveFieldByFieldElementComparatorIgnoringFields("id")
+                .containsExactlyInAnyOrderElementsOf(createdUserDtos);
+    }
+
+
+    @Test
+    void getUserById() {
+
+        User createdUser = userService.createUser(new User("TestUser"));
+        UserDto createdUserDto = userDtoMapper.fromBusiness(createdUser);
+
+        UserDto retrievedUser = given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/users/{id}", createdUserDto.getId())
+                .then()
+                .statusCode(200)
+                .extract()
+                .as(UserDto.class);
+
+        assertThat(retrievedUser)
+                .usingRecursiveComparison()
+                .ignoringFields("id") 
+                .isEqualTo(createdUserDto);
+    }
+
+    @Test
+    void createAndDeleteUser() {
+
+        User newUser = userService.createUser(new User("TestUser"));
+        UserDto newUserDto = userDtoMapper.fromBusiness(newUser);
+
+        UserDto createdUser = given()
+                .contentType(ContentType.JSON)
+                .body(newUserDto)
+                .when()
+                .post("/api/users")
+                .then()
+                .statusCode(201)
+                .extract()
+                .as(UserDto.class);
+
+        assertThat(createdUser.getId()).isNotNull();
+        assertThat(createdUser.getName()).isEqualTo("NewUser");
+
+        when()
+                .delete("/api/users/clear")
+                .then()
+                .statusCode(204);
+
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/users")
+                .then()
+                .statusCode(200)
+                .body(".", hasSize(0));
+    }
+
+
+    @Test
+    void getUserById_NotFound() {
+
+        UUID randomId = UUID.randomUUID();
+
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/api/users/{id}", randomId)
+                .then()
+                .statusCode(404);
+    }
 }

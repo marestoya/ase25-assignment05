@@ -5,6 +5,7 @@ import de.unibayreuth.se.taskboard.business.domain.User;
 import de.unibayreuth.se.taskboard.business.ports.UserService;
 import de.unibayreuth.se.taskboard.business.ports.TaskService;
 import org.apache.commons.lang3.SerializationUtils;
+import de.unibayreuth.se.taskboard.api.dtos.UserDto;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,14 +35,16 @@ public class TestFixtures {
                 .toList();
     }
 
-    public static List<User> createUsers(UserService userService) {
-        // TODO: Fix this after resolving the other TODOs.
-//        return USERS.stream()
-//                .map(SerializationUtils::clone) // prevent issues when tests modify the fixture objects
-//                .map(userService::create)
-//                .collect(Collectors.toList());
-        return List.of();
-    }
+ public static List<User> createUsers(UserService userService) {
+    return USERS.stream()
+            .map(SerializationUtils::clone)
+            .map(user -> {
+                // create a User domain object with name and email
+                User newUser = new User(user.getName());
+                return userService.createUser(newUser); // now this matches the service method
+            })
+            .collect(Collectors.toList());
+}
 
     public static List<Task> createTasks(TaskService taskService) {
         return TASKS.stream()

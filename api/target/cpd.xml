@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd xmlns="https://pmd-code.org/schema/cpd-report"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         pmdVersion="7.7.0"
+         timestamp="2026-01-12T17:35:00.385898246+01:00"
+         version="1.0.0"
+         xsi:schemaLocation="https://pmd-code.org/schema/cpd-report https://pmd.github.io/schema/cpd-report_1_0_0.xsd">
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/controller/TaskController.java"
+         totalNumberOfTokens="855"/>
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/controller/UserController.java"
+         totalNumberOfTokens="229"/>
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/dtos/TaskDto.java"
+         totalNumberOfTokens="62"/>
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/dtos/UserDto.java"
+         totalNumberOfTokens="44"/>
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/mapper/TaskDtoMapper.java"
+         totalNumberOfTokens="198"/>
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/mapper/UserDtoMapper.java"
+         totalNumberOfTokens="97"/>
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/target/generated-sources/annotations/de/unibayreuth/se/taskboard/api/mapper/TaskDtoMapperImpl.java"
+         totalNumberOfTokens="316"/>
+   <file path="/mnt/c/users/marsp/source/repos/ase5/api/target/generated-sources/annotations/de/unibayreuth/se/taskboard/api/mapper/UserDtoMapperImpl.java"
+         totalNumberOfTokens="156"/>
+</pmd-cpd>

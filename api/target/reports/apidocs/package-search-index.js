@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"de.unibayreuth.se.taskboard.api.controller"},{"l":"de.unibayreuth.se.taskboard.api.dtos"},{"l":"de.unibayreuth.se.taskboard.api.mapper"}];updateSearchResults();

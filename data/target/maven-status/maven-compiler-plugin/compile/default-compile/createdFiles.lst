@@ -1,0 +1,10 @@
+de/unibayreuth/se/taskboard/data/persistence/TaskRepository.class
+de/unibayreuth/se/taskboard/data/persistence/UserEntity.class
+de/unibayreuth/se/taskboard/data/persistence/UserRepository.class
+de/unibayreuth/se/taskboard/data/impl/UserPersistenceServiceImpl.class
+de/unibayreuth/se/taskboard/data/persistence/TaskEntity.class
+de/unibayreuth/se/taskboard/data/mapper/TaskEntityMapper.class
+de/unibayreuth/se/taskboard/data/mapper/UserEntityMapper.class
+de/unibayreuth/se/taskboard/data/impl/TaskPersistenceServiceImpl.class
+de/unibayreuth/se/taskboard/data/mapper/TaskEntityMapperImpl.class
+de/unibayreuth/se/taskboard/data/mapper/UserEntityMapperImpl.class
