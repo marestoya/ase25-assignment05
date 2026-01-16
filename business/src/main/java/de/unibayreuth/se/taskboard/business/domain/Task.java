@@ -27,5 +27,6 @@ public class Task implements Serializable {
         @NonNull
         private TaskStatus status = TaskStatus.TODO;
         @Nullable
-        private UUID assigneeId; // null when no user is assigned yet
+        private UUID assigneeId; // null when no user is assigned yet 
+        //test
 }
