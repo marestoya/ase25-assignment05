@@ -164,3 +164,18 @@ curl http://localhost:8080/api/users/6900289d-6905-4898-b05a-3d96ededdd73 # add 
 ```shell
  curl --header "Content-Type: application/json" --request POST --data '{"name": "Denise"}' http://localhost:8080/api/users  
 ```
+## Windows PowerShell "curl" is an alias to Invoke-WebRequest with a different syntax. To call curl you need to call "curl.exe"
+## Note on system tests and Docker
+
+Some system tests (e.g., TaskBoardSystemTests) use Testcontainers and therefore require a working Docker environment.
+On certain platforms—particularly Windows systems using Docker Desktop with WSL2—Testcontainers may fail to detect Docker correctly due to environment limitations, even if Docker itself is running.
+
+If system tests fail solely due to Docker/Testcontainers environment detection issues, this will not negatively affect grading, provided that:
+
+the project builds successfully,
+
+all TODOs are correctly implemented, and
+
+unit and non-Docker-based tests pass.
+
+Students encountering such issues should briefly document the problem (e.g., error message or log excerpt) in their submission or repository README.
