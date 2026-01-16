@@ -5,8 +5,6 @@ import de.unibayreuth.se.taskboard.business.domain.User;
 import de.unibayreuth.se.taskboard.business.ports.UserService;
 import de.unibayreuth.se.taskboard.business.ports.TaskService;
 import org.apache.commons.lang3.SerializationUtils;
-import de.unibayreuth.se.taskboard.api.dtos.UserDto;
-
 import java.util.List;
 import java.util.stream.Collectors;
 

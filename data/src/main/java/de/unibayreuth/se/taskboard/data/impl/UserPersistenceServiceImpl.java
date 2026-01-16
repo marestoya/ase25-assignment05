@@ -62,4 +62,14 @@ public class UserPersistenceServiceImpl implements UserPersistenceService {
         userEntity.setName(user.getName());
         return mapper.fromEntity(repository.saveAndFlush(userEntity));
     }
+
+    @Override
+    public void deleteById(UUID id) {
+        try {
+            repository.deleteById(id);
+        } catch (UserNotFoundException e) {
+            throw new RuntimeException(e); 
+        }
+    }
+        
 }

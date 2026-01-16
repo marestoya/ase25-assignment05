@@ -1,8 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2026-01-12T17:34:29.723">
-<file name="/mnt/c/users/marsp/source/repos/ase5/business/src/main/java/de/unibayreuth/se/taskboard/business/impl/UserServiceImpl.java">
-<violation beginline="3" endline="3" begincolumn="1" endcolumn="78" rule="UnnecessaryImport" ruleset="Code Style" package="de.unibayreuth.se.taskboard.business.impl" class="UserServiceImpl" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
-Unused import 'de.unibayreuth.se.taskboard.business.exceptions.UserNotFoundException'
-</violation>
-</file>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2026-01-16T13:56:51.584">
 </pmd>

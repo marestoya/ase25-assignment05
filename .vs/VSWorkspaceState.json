@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\api",
+    "\\api\\src",
+    "\\api\\src\\main",
+    "\\api\\src\\main\\java",
+    "\\api\\src\\main\\java\\de",
+    "\\api\\src\\main\\java\\de\\unibayreuth",
+    "\\api\\src\\main\\java\\de\\unibayreuth\\se",
+    "\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard",
+    "\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api",
+    "\\api\\src\\main\\java\\de\\unibayreuth\\se\\taskboard\\api\\dtos"
   ],
-  "SelectedNode": "\\C:\\Users\\marsp\\Source\\Repos\\ase25neu",
   "PreviewInSolutionExplorer": false
 }

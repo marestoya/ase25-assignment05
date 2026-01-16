@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"de.unibayreuth.se.taskboard","l":"Application"},{"p":"de.unibayreuth.se.taskboard","l":"TestFixtures"}];updateSearchResults();

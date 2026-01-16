@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd xmlns="https://pmd-code.org/schema/cpd-report"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         pmdVersion="7.7.0"
+         timestamp="2026-01-16T13:57:16.6374996+01:00"
+         version="1.0.0"
+         xsi:schemaLocation="https://pmd-code.org/schema/cpd-report https://pmd.github.io/schema/cpd-report_1_0_0.xsd">
+   <file path="C:\Users\marsp\source\repos\ase5\application\src\main\java\de\unibayreuth\se\taskboard\Application.java"
+         totalNumberOfTokens="31"/>
+   <file path="C:\Users\marsp\source\repos\ase5\application\src\main\java\de\unibayreuth\se\taskboard\LoadInitialData.java"
+         totalNumberOfTokens="136"/>
+   <file path="C:\Users\marsp\source\repos\ase5\application\src\main\java\de\unibayreuth\se\taskboard\TestFixtures.java"
+         totalNumberOfTokens="233"/>
+</pmd-cpd>

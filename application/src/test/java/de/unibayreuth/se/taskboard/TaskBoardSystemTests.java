@@ -4,6 +4,8 @@ import de.unibayreuth.se.taskboard.api.dtos.TaskDto;
 import de.unibayreuth.se.taskboard.api.mapper.TaskDtoMapper;
 import de.unibayreuth.se.taskboard.business.domain.Task;
 import io.restassured.http.ContentType;
+
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -24,7 +26,7 @@ import java.util.stream.Collectors;
 
 
 public class TaskBoardSystemTests extends AbstractSystemTest {
-
+        
     @Autowired
     private TaskDtoMapper taskDtoMapper;
 
@@ -33,6 +35,13 @@ public class TaskBoardSystemTests extends AbstractSystemTest {
 
     @Autowired
     private UserDtoMapper userDtoMapper;
+
+
+    @BeforeEach
+        void clean() {
+                userService.clear();
+                taskService.clear();
+        }
 
     @Test
     void getAllCreatedTasks() {
@@ -102,21 +111,21 @@ public class TaskBoardSystemTests extends AbstractSystemTest {
                 .getList("$", UserDto.class);
 
         assertThat(retrievedUsers)
-                .usingRecursiveFieldByFieldElementComparatorIgnoringFields("id")
+                .usingRecursiveFieldByFieldElementComparatorIgnoringFields( "createdAt", "updatedAt")
                 .containsExactlyInAnyOrderElementsOf(createdUserDtos);
     }
 
 
     @Test
     void getUserById() {
-
-        User createdUser = userService.createUser(new User("TestUser"));
-        UserDto createdUserDto = userDtoMapper.fromBusiness(createdUser);
+        User createdUser = userService.createUser(
+                TestFixtures.getUsers().getFirst()
+        );
 
         UserDto retrievedUser = given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/api/users/{id}", createdUserDto.getId())
+                .get("/api/users/{id}", createdUser.getId())
                 .then()
                 .statusCode(200)
                 .extract()
@@ -124,41 +133,30 @@ public class TaskBoardSystemTests extends AbstractSystemTest {
 
         assertThat(retrievedUser)
                 .usingRecursiveComparison()
-                .ignoringFields("id") 
-                .isEqualTo(createdUserDto);
+                .ignoringFields("id", "updatedAt", "createdAt") 
+                .isEqualTo(createdUser);
     }
 
     @Test
     void createAndDeleteUser() {
 
-        User newUser = userService.createUser(new User("TestUser"));
-        UserDto newUserDto = userDtoMapper.fromBusiness(newUser);
-
-        UserDto createdUser = given()
-                .contentType(ContentType.JSON)
-                .body(newUserDto)
-                .when()
-                .post("/api/users")
+        User createdUser = userService.createUser(
+                TestFixtures.getUsers().getFirst()
+        );
+        when()
+                .get("/api/users/{id}", createdUser.getId())
                 .then()
-                .statusCode(201)
-                .extract()
-                .as(UserDto.class);
-
-        assertThat(createdUser.getId()).isNotNull();
-        assertThat(createdUser.getName()).isEqualTo("NewUser");
+                .statusCode(200);
 
         when()
-                .delete("/api/users/clear")
+                .delete("/api/users/{id}", createdUser.getId())
                 .then()
-                .statusCode(204);
+                .statusCode(204); 
 
-        given()
-                .contentType(ContentType.JSON)
-                .when()
-                .get("/api/users")
+        when()
+                .get("/api/users/{id}", createdUser.getId())
                 .then()
-                .statusCode(200)
-                .body(".", hasSize(0));
+                .statusCode(404); 
     }
 
 

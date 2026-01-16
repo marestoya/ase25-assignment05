@@ -18,8 +18,8 @@ import java.util.stream.Collectors;
 
 
 import java.util.List;
-import java.util.UUID;
 import java.util.Optional;
+import java.util.UUID;
 
 
 
@@ -67,4 +67,12 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(userDtoMapper.fromBusiness(created));
     }
+
+    //added this to delete a user by id
+    @DeleteMapping("/{id}")
+        @ResponseStatus(HttpStatus.NO_CONTENT) 
+        public void deleteUser(@PathVariable String id) {
+        UUID uuid = UUID.fromString(id);
+        userService.deleteUser(uuid); 
+}
 }

@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2026-01-12T17:34:58.827">
-<file name="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/controller/UserController.java">
-<violation beginline="21" endline="21" begincolumn="1" endcolumn="23" rule="UnnecessaryImport" ruleset="Code Style" package="de.unibayreuth.se.taskboard.api.controller" class="UserController" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
-Unused import 'java.util.UUID'
-</violation>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2026-01-16T13:56:59.857">
+<file name="C:\Users\marsp\source\repos\ase5\api\src\main\java\de\unibayreuth\se\taskboard\api\controller\UserController.java">
 <violation beginline="55" endline="55" begincolumn="55" endcolumn="69" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="de.unibayreuth.se.taskboard.api.controller" class="UserController" method="getUserById" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
 Unnecessary qualifier 'java.util': 'UUID' is already in scope because it is imported in this file
-</violation>
-</file>
-<file name="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/dtos/UserDto.java">
-<violation beginline="4" endline="4" begincolumn="1" endcolumn="45" rule="UnnecessaryImport" ruleset="Code Style" package="de.unibayreuth.se.taskboard.api.dtos" class="UserDto" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
-Unused import 'jakarta.validation.constraints.Email'
-</violation>
-</file>
-<file name="/mnt/c/users/marsp/source/repos/ase5/api/src/main/java/de/unibayreuth/se/taskboard/api/mapper/TaskDtoMapper.java">
-<violation beginline="13" endline="13" begincolumn="1" endcolumn="33" rule="UnnecessaryImport" ruleset="Code Style" package="de.unibayreuth.se.taskboard.api.mapper" class="TaskDtoMapper" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
-Unused import 'java.time.OffsetDateTime'
 </violation>
 </file>
 </pmd>

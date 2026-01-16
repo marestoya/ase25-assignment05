@@ -1,6 +1,5 @@
 package de.unibayreuth.se.taskboard.business.impl;
 import de.unibayreuth.se.taskboard.business.domain.User;
-import de.unibayreuth.se.taskboard.business.exceptions.UserNotFoundException;
 import de.unibayreuth.se.taskboard.business.ports.UserPersistenceService;
 import de.unibayreuth.se.taskboard.business.ports.UserService;
 import lombok.RequiredArgsConstructor;
@@ -36,6 +35,12 @@ public class UserServiceImpl implements UserService {
     public void clear() {
         userPersistenceService.clear();
     }
+
+    @Override
+    public void deleteUser(UUID id) {
+        Optional<User> userOpt = getUserById(id);
+        userOpt.ifPresent(user -> userPersistenceService.deleteById(user.getId()));
+}
 
   
 }
